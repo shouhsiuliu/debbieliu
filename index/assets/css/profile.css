@@ -1,0 +1,131 @@
+/* profile--tittle   */
+#profile .tittle,#profile .container{
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+}
+#profile .tittle, #profile .tittle *{
+  transition: .5s;
+}
+#profile .tittle h4{
+  /* margin: 25px 0 */
+}
+
+
+#profile .tittle .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#profile .tittle .info .pic {
+  /* margin: 14px auto; */
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: #f5f4e7;
+}
+#profile .tittle .info ul li{
+  margin: 15px 5px;
+}
+#profile .tittle .info ul,#profile .btn ul{
+  display: flex;
+  justify-content: center;
+}
+#profile .tittle .info ul li::before{
+  content: url(../imgs/icon/place.svg);
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: 0 auto 8px;
+}
+#profile .tittle .info ul li:nth-child(2)::before{
+  content: url(../imgs/icon/mob.svg);
+}
+
+#profile>.tittle>.tittleMob .content{
+  text-align: left;
+}
+
+#profile>.tittle>.tittleMob>.btn>ul>li{
+  width: 50%;
+  /* max-width: 180px; */
+  margin: 25px 5px;
+  
+}
+#profile>.tittle>.tittleMob>.btn>ul>li a{
+  width: unset;
+  margin: unset;
+}
+#profile .tittle .btn ul li:nth-child(2) a{
+  background-color: #f5f4e7;
+  border-color: #f5f4e7;
+}
+#profile .tittle .content p{
+  line-height: 16pt;
+}
+
+#profile .tittle.fixed{
+  position: fixed;
+  background-color: #dfdbd2;
+  width: calc(100% - 24px);
+  max-width: 744px;
+  top: 0;
+  text-align: left;
+  box-sizing: border-box;
+  z-index: 1;
+  border-bottom: 1px solid #aaa;
+}
+#profile .tittle.fixed .pic,
+#profile .tittle.fixed .info,
+#profile .tittle.fixed .content .tag{
+  display: none;
+} 
+#profile .tittle.fixed .tittleMob{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#profile .tittle.fixed .content{
+  margin: 0 0 15px 0;
+  flex:2;
+  padding: 0;
+}
+#profile .tittle.fixed .btn{
+  margin: 0 0 15px 0;
+  flex:10
+}
+#profile .tittle.fixed .btn ul li{
+    margin: 5px 0 10px 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* end- profile -tittle   */
+
+
+
+#profile .container{
+  text-align: left;
+}
+
+#profile .container>ul>li{
+  margin-top: 35px; 
+}
+#profile .container>ul>li:nth-child(1){
+  margin-top: 10px;
+}
+#profile .container>ul>li>ul>li{
+  margin-bottom: 15px;
+}
+#profile .container>ul>li h4{
+  margin-bottom: 8px;
+}
+
+#profile .container li,#profile .container p{
+  line-height: 15pt;
+  letter-spacing: 0.5pt;
+}
+
+#profile .container a{
+  text-decoration: underline
+}

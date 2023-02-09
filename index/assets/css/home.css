@@ -1,0 +1,324 @@
+/* profile--tittle   */
+#profile .tittle{
+  position: relative;
+  text-align: center;
+}
+#profile .tittle, #profile .tittle *{
+  transition: .5s;
+}
+#profile .tittle h4{
+  /* margin: 25px 0 */
+}
+
+#profile .tittle .pic {
+  margin: 14px auto;
+  width:65px;
+  height:65px;
+  border-radius: 50%;
+  background-color: #f5f4e7;
+}
+#profile .tittle .info ul li{
+  margin: 15px 5px;
+}
+#profile .tittle .info ul,#profile .btn ul{
+  display: flex;
+  justify-content: center;
+}
+#profile>.tittle>.tittleMob>.btn>ul>li{
+  width: 50%;
+  max-width: 180px;
+  margin: 25px 5px;
+  
+}
+#profile>.tittle>.tittleMob>.btn>ul>li a{
+  width: unset;
+  margin: unset;
+}
+#profile .tittle .btn ul li:nth-child(2) a{
+  background-color: #f5f4e7;
+  border-color: #f5f4e7;
+}
+#profile .tittle .content p{
+  line-height: 16pt;
+}
+
+#profile .tittle.fixed{
+  position: fixed;
+  background-color: #dfdbd2;
+  width: calc(100% - 24px);
+  max-width: 744px;
+  top: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+#profile .tittle.fixed .pic,
+#profile .tittle.fixed .info,
+#profile .tittle.fixed .content .tag{
+  display: none;
+} 
+#profile .tittle.fixed .tittleMob{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#profile .tittle.fixed .content{
+  margin: 0 0 15px 0;
+  flex:2;
+  padding: 0;
+}
+#profile .tittle.fixed .btn{
+  margin: 0 0 15px 0;
+  flex:10
+}
+#profile .tittle.fixed .btn ul li{
+    margin: 5px 0 10px 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* end- profile -tittle   */
+
+/* profile--story   */
+
+.ig{
+  overflow:hidden
+}
+.ig_head{
+  display:flex;
+  /* padding:12px; */
+  overflow-x:scroll;
+  justify-content: center;
+}
+.ig_head>div{
+padding: 10px 4px 15px;
+line-height: 14pt;
+text-align: center;
+}
+@media (max-width: 767px) {
+.ig_head {
+  justify-content: unset;
+}
+}
+.ig_head_item{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:url('https://photo.queenshop.com.tw/01012740/01012740-h.jpg');
+  background-size: contain;
+  border:1px solid #666;
+  cursor:pointer;
+  margin: 4px;
+  
+}
+
+
+
+.ig_story{
+  transform: scale(0);
+  opacity:0;
+  transition: all .3s;
+  position: fixed;
+  width:100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #111;
+}
+
+.ig_story .ig_story_post{
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+.ig_story .igStory_head{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(https://photo.queenshop.com.tw/01012740/01012740-h.jpg);
+  background-size: contain;
+  margin: 4px;
+  position: absolute;
+  z-index: 4;
+  left: 2%;
+  top: 3%;
+  color:#fff;
+}
+.ig_story .igStory_head i{
+  position: absolute;
+  left: 40px;
+  width: 160px;
+  height: 30px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 24pt;
+  font-size: 10pt;
+  font-style: normal;
+  color: #fff;
+}
+.ig_story_item{
+  margin:0 10px 0 0;
+}
+.ig_story.post{
+  transform: scale(1);
+  opacity:1;
+  top: 0;
+  left: 0;
+}
+.ig_story_item_post{
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background:url('../imgs/1.jpg') no-repeat center center;
+  background-size: contain;
+  transition: all .3s; 
+}
+.ig_story_item_post.pre_post{
+  left:0;
+}
+.ig_story_item_post2{
+  background:url('../imgs/2.jpg') no-repeat center center;
+}
+.ig_story_item_post3{
+  background:url('../imgs/3.jpg') no-repeat center center;
+}
+
+.ig_story_item_post4{
+  background:url('../imgs/4.gif') no-repeat center center;
+}
+
+.ig_story_item_post5{
+  background:url('../imgs/5.gif') no-repeat center center;
+}
+
+.ig_story_item_post6{
+  background:url('../imgs/6.jpg') no-repeat center center;
+}
+.ig_story_item_post7{
+  background:url('../imgs/7.jpg') no-repeat center center;
+}
+
+
+
+.ig .close{
+  cursor: pointer;
+  transition: all .3s;
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  font-size: 17px;
+  font-weight: 100;
+  text-shadow: 0 0 black;
+  color: #fff;
+  position: absolute;
+  z-index: 4;
+  right: 2%;
+  top: 3%;
+}
+
+.ig .prev,.ig .next{
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  height: 100%;
+  width: 8em;
+  cursor: pointer;
+  transition: all .5s;
+}
+.ig .prev>span,.ig .next>span{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-40%);
+  font-size: 20pt;
+  transition: all .5s;
+  color: transparent;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  line-height: 5px;
+  text-align: center;
+}
+.ig .next{
+  right: 0;
+  left: unset;
+}
+.ig .prev:hover{
+  background-image: linear-gradient(to right, rgba(0,0,0,.5), transparent 95%);
+}
+.ig .next:hover{
+  background-image: linear-gradient(to left, rgba(0,0,0,.5), transparent 95%);
+}
+
+.ig .prev:hover>span,.ig .next:hover>span{
+  /* color: #333; */
+  /* transform: translate(-50%,-50%);
+  border: 1px solid #666;
+  background-color: #d1cbbe; */
+  color: #fff;
+    transform: translate(-50%,-50%) rotate(360deg);
+}
+
+.ig .load{
+  width: 96%;
+  height: 3px;
+  background: #ccc;
+  position: absolute;
+  top: 2%;
+  z-index: 4;
+  left: 2%;
+  border-radius: 5px;
+  transition:.5s;
+  
+}
+.ig .load .load_line{
+  width: 0%;
+  height: 3px;
+  background: #eee;
+  position: absolute;
+  top: 2%;
+  z-index: 4;
+  left: 0;
+  border-radius: 5px;
+  /* transition: .5s; */
+}
+.ig .load_line.loading{
+  animation-name:load_line;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes load_line{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 100%;
+  }
+}
+.tittle .info ul li::before{
+  content: url(../imgs/icon/place.svg);
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: 0 auto 8px;
+}
+.tittle .info ul li:nth-child(2)::before{
+  content: url(../imgs/icon/mob.svg);
+}
+
+/* end- profile--story   */
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+nav {
+  width:100%;
+  max-width: 768px;
+  overflow: hidden;
+  background-color: rgba(223,219,210,.65);
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+}
+nav a {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width:33.333%; /**/
+  padding: 14px ;
+  transition: 0.3s;
+  font-size: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+nav a:hover {
+  background-color: #eee;
+}
+nav a.active,nav a:hover {
+  background-color: #d1cbbe;
+}
+nav a svg{
+  width: 19px;
+  height: 19px;
+  fill: #333;
+  stroke: #333;
+  stroke-width: 0.1pt;
+  display: block;
+  margin: 0 auto 7px;
+}

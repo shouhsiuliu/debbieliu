@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Cormorant-Bold';
+  src: url('../font/Cormorant-Bold.ttf');
+}
+@font-face {
+  font-family: 'Cormorant-BoldItalic';
+  src: url('../font/Cormorant-BoldItalic.ttf');
+}
+* {
+  color:#333;
+  text-decoration: none;
+}
+html{
+  background-color: #dfdbd2;
+}
+a,p,li,div,button,i{
+  font-family: 'Cormorant-Bold';
+  font-size: 10pt;
+}
+h4>b{
+  font-family: 'Cormorant-BoldItalic';
+}
+.wrap{
+  /* background-color: #dfdbd2; */
+}
+.section{
+  width:100%;
+  max-width:768px;
+  margin:0 auto;
+  position: relative;
+}
+.wrap>.section>.content{
+  padding: 6px 12px 70px;
+}
+.tab{
+  overflow-y: auto;
+  text-align: center;
+}
+.tittle{
+  text-align: left;
+}
+.tittle h4{
+  margin: 25px 0
+}
+.btn{
+  overflow: hidden;
+}
+.btn ul{
+  display:flex;
+  
+}
+
+.btn ul li a{
+  padding: 5px;
+  display: block;
+  border-radius:2px;
+  border:1px solid #666;
+  text-align: center;
+  width: 60px;
+  margin: 15px 8px 15px 0;
+  color:#666;
+}
+.btn ul li:nth-last-child(1) a{
+  margin: 15px 0;
+}
+.search input{
+  background-color: #f5f4e7;
+  border-color: #f5f4e7;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333;
+  padding: 5px 12px;
+  width: calc(100% - 24px);
+  border-radius: 2px;
+  background-image: url('../imgs/icon/search.svg');
+  background-repeat: no-repeat;
+  text-indent: 18px;
+  background-size: 17px 17px;
+  background-position: 5px;
+}
+.search input::placeholder{
+  color:#333;
+}
+
+/* post */
+#profile>.post{
+  margin: 23px auto 0;
+}
+.post ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post ul li{
+  width: 33%;
+  overflow: hidden;
+  margin: .5px;
+}
+.post ul li img{
+  width: 100%;
+}
+/* end-post */
+
+
+/* //捲軸底色 */
+* ::-webkit-scrollbar-track,
+* ::-webkit-scrollbar,
+* ::-webkit-scrollbar-thumb {
+  transition: all 1s;
+  /* visibility:hidden; */
+  background-color: #dfdbd2;
+}
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb{
+  /* display: none; */
+}
+.ig_head:hover::-webkit-scrollbar-track,
+.ig_head:hover::-webkit-scrollbar,
+.ig_head:hover::-webkit-scrollbar-thumb,
+#shop .btn ul:hover::-webkit-scrollbar-track,
+#shop .btn ul:hover::-webkit-scrollbar,
+#shop .btn ul:hover::-webkit-scrollbar-thumb,
+body:hover::-webkit-scrollbar-track,
+body:hover::-webkit-scrollbar,
+body:hover::-webkit-scrollbar-thumb {
+  visibility:visible;
+  display: block;
+}
+* ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f0efe7;
+}
+/* //捲軸寬度 */
+* ::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+  background-color: #666;
+}
+/* //捲軸本體顏色 */
+* ::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+

@@ -1,0 +1,41 @@
+
+.tablink {
+  width:100%;
+  max-width: 768px;
+  overflow: hidden;
+  background-color: rgba(223,219,210,.65);
+  position: fixed;
+  bottom:0
+}
+.tablink button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width:20%;
+  padding: 14px ;
+  transition: 0.3s;
+  font-size: 12px;
+}
+.tablink button:hover {
+  background-color: #eee;
+}
+.tablink button.active,.tablink button:hover {
+  background-color: #d1cbbe;
+}
+.tablink button svg{
+  width: 20px;
+  height: 20px;
+  fill: #333;
+  stroke: #333;
+  stroke-width: 0.1pt;
+  display: block;
+  margin: 0 auto 7px;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
