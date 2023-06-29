@@ -23,6 +23,9 @@
   height:60px;
   border-radius: 50%;
   background-color: #f5f4e7;
+  background-image:url('../imgs/home/profile.jpg');
+  background-size: contain;
+  overflow: hidden;
 }
 #profile .tittle .info ul li{
   margin: 15px 5px;

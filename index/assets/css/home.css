@@ -15,7 +15,10 @@
   width:65px;
   height:65px;
   border-radius: 50%;
+  overflow: hidden;
   background-color: #f5f4e7;
+  background-image:url('../imgs/home/profile.jpg');
+  background-size: contain;
 }
 #profile .tittle .info ul li{
   margin: 15px 5px;
