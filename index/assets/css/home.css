@@ -87,7 +87,8 @@
   display:flex;
   /* padding:12px; */
   overflow-x:scroll;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .ig_head>div{
 padding: 10px 4px 15px;
@@ -103,12 +104,14 @@ text-align: center;
   width:50px;
   height:50px;
   border-radius:50%;
-  background:url('https://photo.queenshop.com.tw/01012740/01012740-h.jpg');
+  /* background:url('https://photo.queenshop.com.tw/01012740/01012740-h.jpg'); */
+  background-color: #f5f4e7;
   background-size: contain;
-  border:1px solid #666;
+  border:1px solid #999;
   cursor:pointer;
   margin: 4px;
-  
+  line-height: 50px;
+  font-size: smaller;
 }
 
 
@@ -134,15 +137,17 @@ text-align: center;
   position: relative;
 }
 .ig_story .igStory_head{
-  width: 30px;
+  /* width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: url(https://photo.queenshop.com.tw/01012740/01012740-h.jpg);
+  background-color: #f5f4e7;
   background-size: contain;
+  border:1px solid #999;
+  background-size: contain; */
   margin: 4px;
   position: absolute;
   z-index: 4;
-  left: 2%;
+  left: 0%;
   top: 3%;
   color:#fff;
 }
@@ -186,26 +191,67 @@ text-align: center;
 }
 .ig_story_item_post2{
   background:url('../imgs/2.jpg') no-repeat center center;
+  background-size: contain;
 }
 .ig_story_item_post3{
   background:url('../imgs/3.jpg') no-repeat center center;
+  background-size: contain;
 }
 
 .ig_story_item_post4{
   background:url('../imgs/4.gif') no-repeat center center;
+  background-size: contain;
 }
 
 .ig_story_item_post5{
   background:url('../imgs/5.gif') no-repeat center center;
+  background-size: contain;
 }
 
 .ig_story_item_post6{
   background:url('../imgs/6.jpg') no-repeat center center;
+  background-size: contain;
 }
 .ig_story_item_post7{
   background:url('../imgs/7.jpg') no-repeat center center;
+  background-size: contain;
 }
-
+.ig_story_item_post8{
+  background:url('../imgs/8.gif') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post9{
+  background:url('../imgs/9.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post10{
+  background:url('../imgs/10.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post11{
+  background:url('../imgs/11.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post12{
+  background:url('../imgs/12.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post13{
+  background:url('../imgs/13.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post14{
+  background:url('../imgs/14.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post15{
+  background:url('../imgs/15.jpg') no-repeat center center;
+  background-size: contain;
+}
+.ig_story_item_post16{
+  background:url('../imgs/16.jpg') no-repeat center center;
+  background-size: contain;
+}
 
 
 .ig .close{

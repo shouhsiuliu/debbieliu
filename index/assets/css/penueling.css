@@ -1,0 +1,220 @@
+.wave_wrapper {
+    width: 100%;
+    height: 100px;
+    /* box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2); */
+    background: transparent;
+    position: absolute;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    }
+
+    .wave {
+    background: #87bbc6;
+    width: 9000px;
+    height: 9000px;
+    border-radius: 43%;
+    opacity: .88;
+    position: absolute;
+    bottom: 275%;
+    left: 50%;
+    margin-left: -4500px;
+    margin-top: -4500px;
+    transform-origin: center;
+    animation: drift 12.5s infinite linear;
+    -webkit-border-radius: 43%;
+    -moz-border-radius: 43%;
+    -ms-border-radius: 43%;
+    -o-border-radius: 43%;
+    -webkit-animation: drift 12.5s infinite linear;
+}
+    .wave.two {
+    animation: drift 14s infinite linear;
+    opacity: 0.65;
+    -webkit-animation: drift 14s infinite linear;
+}
+    .wave.three {
+    animation: drift 15.5s infinite linear;
+    opacity: 0.4;
+    -webkit-animation: drift 15.5s infinite linear;
+}
+    @keyframes drift {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+  
+    @media screen and (max-width: 767px){
+        .wave_wrapper{
+            z-index: -1;
+            height: 50px;
+        }
+        
+        .wave
+        {
+            bottom: 86%;
+            width: 1400px;
+            height: 1400px;
+            margin-left: -700px;
+            margin-top: -700px;
+            border-radius: 44%;
+            -webkit-border-radius: 44%;
+            -moz-border-radius: 44%;
+            -ms-border-radius: 44%;
+            -o-border-radius: 44%;
+}
+    }
+
+    /* nav */
+
+    
+
+  /* bg----------------------------------------------------------------------------------- */
+
+  #navbar,nav .main,nav#navbar>div#stickyBar,
+  .navbar-custom .dropdown-menu,
+  .dropdown-content,
+  .navbar-custom>.container>.collapse>ul.navbar-right>li div,
+  #phonesearch,
+  .navbar .container.searchMob{
+    background: #87bbc6;
+   
+  }
+  .navbar>.container>.navbar-collapse>ul.navmain>li>ul>li:hover,
+  .navbar>.container>.navbar-collapse>ul.navmain>li>ul>li>ul>li:hover,
+  nav #search ul li a:hover,
+  .navbar .bar a:hover,
+  .menu_mob_block>input,
+  .navbar-custom .nav>li>a:focus, .navbar-custom .nav>li>a:hover, 
+  .navbar-custom .nav .open>a, .navbar-custom .nav .open>a:focus,
+   .navbar-custom .nav .open>a:hover, 
+   .navbar-custom .dropdown-menu>li>a:focus, 
+   .navbar-custom .dropdown-menu>li>a:hover,
+   .dropdown div>a:hover,
+   .navbar .bar .adclose:hover{
+    /* background-color: #fff; */
+    background-color: rgba(135,187,198,.5);
+    /* background-color: rgba(255,255,255,.1); */
+
+  }
+  
+ 
+  nav #search ul li a:hover,
+  nav #phonesearch ul li a:hover,
+  .navbar-custom>.container>.collapse>ul.navbar-right>li>a>span,
+  .navbar .bar a:hover,
+  .navbar>.container>.navbar-collapse>ul.navmain li>a,
+  .navbar>.container>.navbar-collapse>ul.navmain li:hover>a {
+    background: #87bbc6;
+    color:#fff
+  }
+  .navbar .bar a,
+  .navbar .container.helloBar,
+  .navbar .container.helloBar .bar,
+  .dropdown-content a,
+  nav #search ul li a,
+  #search>input{
+    background: #87bbc6;
+    color:#fff
+  }
+  .navbar-custom .navbar-toggle .icon-bar
+  {
+    background-color: #fff;
+  }
+  
+  /* border----------------------------------------------------------------------------------- */
+
+  
+ 
+  .navbar .bar .adclose:hover{
+    border: 1px solid rgba(255,255,255,.5);
+    color:#fff;
+  }
+  
+  nav #search ul li a,
+  .dropdown-content,#search,
+  .menu_mob_block>.searchinput:focus,
+  nav #phonesearch ul li a,
+  .navbar .bar a,
+  nav #search ul li a:hover,
+  nav #phonesearch ul li a:hover
+  {
+    border: 1px solid rgba(255,255,255,.5);
+  }
+ 
+  #search>input,
+  .navbar .container.helloBar{
+      border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+.menu_mob_block>input{
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+  /* mob----------------------------------------------------------------------------------- */
+  
+ @media (max-width: 767px){ 
+  .navbar .container.main div:nth-child(2){
+    background: #87bbc6
+  }
+  
+  .navbar-custom>.container>.collapse>ul.navbar-right>li{
+    background: #87bbc6;
+  }
+  .navbar-custom .dropdown-menu>li{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+   }
+  
+ }
+ /* not mob----------------------------------------------------------------------------------- */
+ @media screen and (min-width: 767px){
+  .navbar-custom>.container>.collapse>ul.navbar-right>li:hover
+ {
+    background-color: rgba(0,0,0,.1)
+  }
+ }
+
+ /*  */
+ #stickyBar.sticky {
+  background: #87bbc6;
+}
+
+.navbar .bar a{
+  border-radius: 62%;
+}
+
+.navbar>.container>.navbar-collapse>ul.navmain>li>a,
+.navbar-custom .nav li>a,
+.menu_mob_block>input,
+.menu_mob_block a,
+div.menu_mob_block>a:after,
+nav #phonesearch ul li a,
+.navbar-custom .nav>li>a:hover{
+  color:#fff
+}
+.menu_mob_block>img{
+  filter: brightness(1);
+}
+
+input.searchinput::-webkit-input-placeholder { color:#fff ;letter-spacing: 2px; }
+    input.searchinput:-moz-placeholder {color:#fff ; letter-spacing: 2px; }
+    input.searchinput::-moz-placeholder { color:#fff ; letter-spacing: 2px;}
+    input.searchinput:-ms-input-placeholder { color:#fff ;letter-spacing: 2px; }
+
+
+    input.searchinput:focus::-webkit-input-placeholder { color: #fff ;letter-spacing: 2px; }
+    input.searchinput:focus:-moz-placeholder { color: #fff ; letter-spacing: 2px; }
+    input.searchinput:focus::-moz-placeholder { color: #fff ; letter-spacing: 2px;}
+    input.searchinput:focus:-ms-input-placeholder { color: #fff ;letter-spacing: 2px; }
+
+    .menu_mob_block>input::placeholder,
+    #search>input.searchinput::placeholder{
+      color: #fff!important;
+  }
+
+  header {
+    border-bottom: none;
+}

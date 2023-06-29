@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEBBIE LIU-Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* pop */
+
+            .pop,.turntable {
+            background: rgba(0, 0, 0, .6);
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            z-index: 9997;
+            }
+            .turntable{
+            z-index: 9998;
+            background: rgba(0, 0, 0, .7);
+            }
+            .pop>section,.turntable>section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            }
+
+            .pop>section>.popclose {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+            .pop>section,.turntable>section {
+                width: 75%;
+            }
+            }
+
+            /* end-pop */
+
+            
+
+            /* turntable */
+
+            li,p,h2{
+            font-family: "Roboto Condensed", sans-serif, "微軟正黑體";
+            }
+            .turntable .popclose{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            color: #eee;
+            font-size: 19pt;
+            line-height: 35px;
+            border-radius: 50%;
+            /* border: 1px solid #fff;
+            background:rgba(51,51,51,.5); */
+            cursor:pointer;
+            font-weight:100;
+            }
+            .turntable .box{
+            display:flex;
+            /* background: red; */
+            width: 768px;
+            max-width: 100%;
+            }
+            @media (max-width: 768px) {
+            .turntable .box {
+            flex-wrap:wrap;
+            justify-content:center;
+            }
+            }
+            .turntable .box .circle{
+            position: relative;
+            background: radial-gradient(circle at 35% 25%,
+            #111 0,#444 20%,#777 40%,#000 90%,#444 95%,#777 100%);
+            border-radius: 50%;
+            width: 320px;
+            height: 320px;
+            }  
+
+            .turntable .box .circle #pointer {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            background: rgba(0,0,0,1);
+            height: 50px;
+            border-radius:50%;
+            transform: translate(-50%, -50%);
+            /* overflow: hidden; */
+            text-align: center;
+            line-height: 40px;
+            border:4px solid #666;
+            display: block;
+            }
+            .turntable .box .circle #pointer img{
+            width:70%;
+            }
+            .turntable .box .circle #pointer:before{
+            border: solid transparent;
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(180deg);
+            border-width: 18px 15px 0 15px;
+            border-top-color: #000;
+            }
+
+
+            .turntable .box .circle #turntable2 {
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            transition: all 4s;
+            background: #fff;
+            padding: 10px;
+            border: 8px solid #333;
+            margin: 9px;
+            overflow: hidden;
+            position: relative;
+            /* transform: rotate(45deg); */
+            }
+            .turntable .box .circle #turntable2:before {
+            content: '';
+            background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, white 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
+            background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, white 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, white 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 300%;
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+            -webkit-animation: shinye 5s ease infinite;
+            animation: shinye 5s ease infinite;
+            }
+            @keyframes shinye {
+            0% {
+            transform: translateX(-150%) skewX(-205deg);
+            opacity: 1;
+            }
+            80% {
+            transform: translateX(200%) skewX(-205deg);
+            opacity: 1;
+            }
+            100% {
+            transform: translateX(200%) skewX(-205deg);
+            opacity: 0;
+            }
+            }
+            .turntable .box .circle #turntable2 ul{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background:
+                radial-gradient(circle at 50% 50%,
+                rgba(0,0,0,.2) 5%, 
+                rgba(0,0,0,.1) 50%,
+                rgba(255,255,255,0) 70%,
+                rgba(255,255,255,0) 100%
+                ), repeating-conic-gradient(
+                #eee 45deg, 
+                #eee 135deg,
+                #fff 135deg,
+                #fff 225deg );
+            border-radius: 50%;
+            }
+            .turntable .box .circle #turntable2 ul li{
+            list-style: none;
+            position: absolute;
+            transform-origin: 0 0;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-weight: 600;
+            font-size: 13pt;
+            }
+            .turntable .box .circle #turntable2 ul li:nth-child(1) {
+            transform: rotate(270deg) translateX(-50%) translateY(-323%);
+            }
+            .turntable .box .circle #turntable2 ul li:nth-child(2) {
+            transform: rotate(180deg) translateX(-50%) translateY(-323%);
+            }
+            .turntable .box .circle #turntable2 ul li:nth-child(3) {
+            transform: rotate(90deg) translateX(-50%) translateY(-323%);
+            }
+            .turntable .box .circle #turntable2 ul li:nth-child(4) {
+            transform: rotate(0deg) translateX(-50%) translateY(-323%);
+            
+            }
+
+
+            .turntable .box .circle #turntable2 p{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+
+            .turntable .box .content{
+            text-align:center;
+            color:#fff;
+            margin: auto;
+            margin-left: 35px;
+            }
+            @media (max-width: 768px) {
+            .turntable .box .content{
+            margin-left: 0;
+            margin-top: 25px;
+            }
+            }
+            .turntable .box .content .logo{
+            background: black;
+            width: 36%;
+            margin: 0 auto;
+            }
+            .turntable .box .content h2{
+            font-size:23pt;
+            letter-spacing: 1px;
+            }
+            .turntable .box .content p{
+            font-size:12pt;
+            letter-spacing: 1px;
+            }
+            .turntable .box .content button{
+            color: #333;
+            padding: 4px 65px;
+            font-weight: 600;
+            font-size: 12pt;
+            background: linear-gradient(45deg, #ddd, #eee, #ddd,#ddd,#ddd);
+            -webkit-animation: breath 2s linear .2s infinite;
+            animation: breath 2s linear .2s infinite;
+            margin: 0 auto;
+            display: block;
+            }
+            .turntable .box .content button#copy{
+            opacity: 0;
+            transition: all .5s;
+            transition-delay: 4.5s;
+            }
+            .turntable .box .content button#copy.show{
+            opacity: 1;
+            
+            }
+
+            @keyframes breath {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            5% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+            10% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            15% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+            20% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            }
+            @-webkit-keyframes breath {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            5% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+            10% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            15% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+            20% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            }
+
+            .turntable .box .content p.result{
+            background: rgba(137,137,137,.4);
+            margin: 0 auto 15px;
+            /* padding: 4px 65px; */
+            font-weight: 600;
+            text-align:center;
+            line-height: 26pt;
+            }
+
+            /* end-turntable */
+
+
+    </style>
+
+</head>
+
+
+<body >
+
+   
+     <!-- turntable -->
+    <div class="turntable" >
+        <section>
+            <div class="popclose">X</div>
+            <style>
+               
+            </style>
+            <div class="box">
+                <div class="circle" >
+                    <div>
+                        <div id="pointer"><img src="https://www.queenshop.com.tw/favicon.ico" alt=""></div>
+                    </div>                    
+                    <div id="turntable2">
+                      <ul >
+                        <li>$100購物金</li>
+                        <li>$200購物金</li>
+                        <li>$50購物金</li>
+                        <li>未中獎QQ!</li>
+                      </ul>
+                    </div>                     
+                   
+                </div>  
+                <div class="content">
+                    <div class="logo" ><img src="https://www.queenshop.com.tw/assets/images/icon/logoW.svg" alt=""></div> 
+                    <h2>\ HAPPY NEW YEAR! / 最高送$200購物金</h2>
+                    <p>最高送$200購物金</p>
+                    <p id="result" class="result" ></p>
+                    <button id="btn">START NOW!</button>
+                    <button id="copy">點我複製</button>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- end-turntable -->
+
+    <!-- pop -->
+    <div class="pop" onclick="$(this).fadeOut()">
+        <section>
+            <div class="popclose">
+                <img src="http://photo.queenshop.com.tw/www/index/assets/images/pop/close.png" alt="">
+            </div>
+            <style>
+                /* .pop a {
+                    transition: all .8s;
+                }
+
+                .pop a:hover {
+                    background: rgba(0, 0, 0, .2)
+                } */
+            </style>
+            <div style="position: relative;">
+                <img src="http://photo.queenshop.com.tw/www/index/assets/images/pop/220401.jpg" alt="">
+                <a style="position: absolute; width:100%; left:0; top:0; height:100%;" href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=28&item2=01"></a>
+                <a style="position: absolute; width:49.8%; right:0%; top:59%; height:32.2%;" href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=10&Order=0"></a>
+            </div>
+
+        </section>
+    </div>
+    <!-- end-pop -->
+
+         
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+  $(".popclose").click(function(){
+      $(".turntable").fadeOut();
+  });
+  
+
+
+
+      var btn = document.getElementById("btn");
+        var oTurntable = document.getElementById("turntable2");
+        var cat = 90; //总共4个扇形区域，每个区域约90度
+        var num = 0; //转圈结束后停留的度数
+        var offOn = true; //是否正在抽奖
+        btn.onclick = function () {
+            if (offOn) {
+                oTurntable.style.transform = "rotate(0deg)";
+                offOn = !offOn;
+                ratating();
+                
+            }
+        }
+        //旋转
+
+        var result=document.getElementById("result");
+        var copy=document.getElementById("copy");
+        
+        function ratating() {
+            var timer = null;
+            var rdm = 0; //随机度数
+            clearInterval(timer);
+            timer = setInterval(function () {
+                if (Math.floor(rdm / 360) < 3) { rdm = Math.floor(Math.random() * 3600); }
+                else {
+                    oTurntable.style.transform = "rotate(" + rdm + "deg)";
+                    clearInterval(timer);
+                    setTimeout(function () {
+                        offOn = !offOn;
+                        num = rdm % 360;
+                        if (num <= cat * 1) { result.innerText = '未中獎QQ!' }
+                        else if (num <= cat * 2) { result.innerText = '$100購物金' }
+                        else if (num <= cat * 3) { result.innerText = '$200購物金' }
+                        else if (num <= cat * 4) { result.innerText = '$50購物金' }
+                    }, 4000);
+                    $("#btn").fadeOut();
+                    copy.classList.add("show");
+                    copy.onclick = function () {          
+                      copyBtn();
+                    }
+                }
+            }, 30);
+        };
+        function copyBtn() {
+          var val=document.getElementById("result");
+          window.getSelection().selectAllChildren(val);
+          // document.execCommand("Copy");
+          alert("已複製")
+        }
+
+      });
+
+    //  <script type="text/javascript" src="assets/js/turntable.js">
+    </script>
+
+</body>
+
+</html>

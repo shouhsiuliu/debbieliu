@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEBBIE LIU-Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/penueling_nav.css" rel="stylesheet">
+    <link href="assets/css/penueling.css" rel="stylesheet">
+
+</head>
+
+
+<body >
+
+
+   
+   <!-- nav -->
+   <nav class="navbar navbar-custom navbar-transparent" id="navbar" role="navigation">
+        
+        <!-- hello bar -->
+        <div class="container helloBar">
+            <div class="bar">
+                <span>QS遊記 全館85折 買越多折越多!</span>
+                <div class="bar_btn"><a href="">GOGO</a></div>
+                <div class="adclose" onclick="$(this).parent().slideUp()">x</div>
+            </div>
+        </div>
+        <!-- end- hello bar -->
+
+        <!-- logo&service -->
+        <div class="container" id="stickyBar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">
+                    <img src="https://www.queenshop.com.tw/assets/images/icon/logoW.svg" alt="">
+                </a>
+            </div>
+            <!-- service -->
+            <div class="collapse navbar-collapse" id="">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown menu_pc_none">
+                        <a name="menu_search">
+                            <img src="assets/imgs/icon/penueling/searchW.svg" alt="">
+                        </a>
+                        <div id="search" class="dropdown-content" name="menu_search" >
+                            <input class="searchinput" type="text" placeholder=" SEARCH ..">
+                            <img src="assets/imgs/icon/penueling/searchW.svg" alt="">
+                            <!-- 0911edit -->
+                            <ul>
+                            <li><a href="">碎花</a></li>
+                            <li><a href="">襯衫襯衫襯衫襯衫襯衫</a></li>
+                            <li><a href="">牛仔褲</a></li>
+                            <li><a href="">寬褲</a></li>
+                            <li><a href="">毛衣</a></li>
+                            <li><a href="">碎花</a></li>
+                            <li><a href="">寬褲寬褲寬褲</a></li>
+                            <li><a href="">寬褲寬褲寬褲</a></li>
+                            <li><a href="">襯衫襯衫襯衫襯衫襯衫</a></li>
+                            </ul>
+                            <!-- end-0911edit -->
+                        </div>
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a name="menu_user">
+                            <img src="assets/imgs/icon/penueling/userW.svg" alt="">
+                        </a>
+                        <div class="dropdown-content" name="menu_user">
+                            <a href="#">會員中心</a>
+                            <a href="#">訂單查詢,申請退貨</a>
+                            <a href="#">購物金查詢</a>
+                            <a href="#">收藏清單</a>
+                        </div>
+                    </li>
+
+                    <li >
+                        <a href="#">
+                            <img src="assets/imgs/icon/penueling/carW.svg" alt="">
+                            <span>20</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a name="menu_list">
+                            <img src="assets/imgs/icon/penueling/listW.svg" alt="">
+                        </a>
+                        <div class="dropdown-content" name="menu_list">
+                            <a href="https://www.queenshop.com.tw/zh-TW/News">最新消息</a>
+                            <a href="https://www.queenshop.com.tw/zh-TW/About?ID=a98cad66-5d18-482c-a6e8-642b9470dd0c&IDType=2">常見問題</a>
+                            <a href="https://www.queenshop.com.tw/zh-TW/Store">門市資訊</a>
+                            <a href="https://www.queenshop.com.tw/zh-TW/About?ID=45455191-42a7-4484-b388-ead22a0abd7b&IDType=2">會員權益</a>
+                            <a href="https://www.queenshop.com.tw/zh-TW/About?ID=b6be01ba-d6f7-4ba8-aedd-2c18384773d3&IDType=2">售後服務</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a name="menu_language">
+                            <img src="assets/imgs/icon/penueling/moreW.svg" alt="">
+                        </a>
+                        <div class="dropdown-content" name="menu_language" >
+                            <a href="#">CH | 中文版</a>
+                            <a href="#">EN | 英文版</a>
+                            <a href="#">MY/SG | 新馬版</a>
+                            <a href="#">TWD | 台幣</a>
+                            <a href="#">USD | 美元</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- end- service -->
+        </div>
+        <!-- end- logo&service -->
+
+        <!-- nav-main -->
+        <div class="container main">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav navmain menu_mob_block" >
+                    <li><a href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=00">NEW IN</a></li>
+                    <li><a href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=09">現貨專區</a></li>
+                    <li><a href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=10">美好生活選物</a></li>
+                    <li><a href="https://www.queenshop.com.tw/zh-TW/QueenShop/ProductList?item1=03">SALE</a></li>
+                </ul>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse" onclick="myFunction(this)" name="menu_main">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+
+           
+            
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="custom-collapse" name="menu_main">
+
+                <ul class="nav navbar-nav navmain">
+                        <!-- 12 -->
+                        <li class="dropdown ">
+                            <a href="index_mp_fullscreen_flexslider.html#" class="dropdown-toggle" data-toggle="dropdown">12周年慶|全館88折</a>
+                            <ul class="dropdown-menu second-menu">
+                                <li>
+                                    <a href="#">期間限定！推薦特輯</a>
+                                </li>
+                                <li>
+                                    <a href="#">全球免運|Free Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="#">超值兩件組合專區</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- SALE -->
+                        <li class="dropdown ">
+                            <a href="index_mp_fullscreen_flexslider.html#" class="dropdown-toggle" data-toggle="dropdown">SALE</a>
+                            <ul class="dropdown-menu second-menu">
+                                <li>
+                                    <a href="#">期間限定！推薦特輯</a>
+                                </li>
+                                <li>
+                                    <a href="#">全球免運|Free Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="#">超值兩件組合專區</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- COLLECTION -->
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">COLLECTION</a>
+                            <ul class="dropdown-menu second-menu">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">QUEEN SHOP</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">上著</a>
+                                        </li>
+                                        <li>
+                                            <a href="">下著</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連身款</a>
+                                        </li>
+                                        <li>
+                                            <a href="">配件</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUTDOOR</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">Women</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Men</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Kids</a>
+                                        </li>
+                                        <li>
+                                            <a href="">親子</a>
+                                        </li>
+                                        <li>
+                                            <a href="">配件</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">LADY</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">上著</a>
+                                        </li>
+                                        <li>
+                                            <a href="">下著</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連身款</a>
+                                        </li>
+                                        <li>
+                                            <a href="">配件</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">MR. MEN LITTLE MISS</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">Women</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Kids</a>
+                                        </li>
+                                        <li>
+                                            <a href="">親子</a>
+                                        </li>
+                                        <li>
+                                            <a href="">配件</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">HOME居家</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">運動單品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ITEMS -->
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ITEMS</a>
+                            <ul class="dropdown-menu second-menu" role="menu">
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">人氣推薦</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">現貨單品</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">熱銷最新補貨</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">熱銷最新補貨</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">全部商品</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">衣料品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">背心</a>
+                                        </li>
+                                        <li>
+                                            <a href="">T-shirt</a>
+                                        </li>
+                                        <li>
+                                            <a href="">上衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">五分袖上衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">七分袖上衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">長袖上衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連帽上衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">雪紡</a>
+                                        </li>
+                                        <li>
+                                            <a href="">棉麻</a>
+                                        </li>
+                                        <li>
+                                            <a href="">牛仔</a>
+                                        </li>
+                                        <li>
+                                            <a href="">吊帶褲/裙</a>
+                                        </li>
+                                        <li>
+                                            <a href="">套裝</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連身</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連身</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">襯衫</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">素面</a>
+                                        </li>
+                                        <li>
+                                            <a href="">牛仔</a>
+                                        </li>
+                                        <li>
+                                            <a href="">棉麻</a>
+                                        </li>
+                                        <li>
+                                            <a href="">雪紡</a>
+                                        </li>
+                                        <li>
+                                            <a href="">條紋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">格紋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">圖案</a>
+                                        </li>
+                                        <li>
+                                            <a href="">拼接</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">外套</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">針織外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">牛仔外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">風衣 / 大衣</a>
+                                        </li>
+                                        <li>
+                                            <a href="">西裝外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">飛行 / 短版外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連帽外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">長版外套</a>
+                                        </li>
+                                        <li>
+                                            <a href="">背心外套</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">洋裝</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">牛仔</a>
+                                        </li>
+                                        <li>
+                                            <a href="">雪紡</a>
+                                        </li>
+                                        <li>
+                                            <a href="">棉麻</a>
+                                        </li>
+                                        <li>
+                                            <a href="">素面</a>
+                                        </li>
+                                        <li>
+                                            <a href="">格紋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">圖案</a>
+                                        </li>
+                                        <li>
+                                            <a href="">條紋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">拼接</a>
+                                        </li>
+                                        <li>
+                                            <a href="">連身</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">針織</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">素面</a>
+                                        </li>
+                                        <li>
+                                            <a href="">條紋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">拼接</a>
+                                        </li>
+                                        <li>
+                                            <a href="">背心</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">褲款</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">短褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">長褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">牛仔褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">內搭褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">寬褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">褲裙</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">裙款</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">長裙</a>
+                                        </li>
+                                        <li>
+                                            <a href="">短裙</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">鞋款</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">涼鞋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">拖鞋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">休閒鞋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">厚底鞋</a>
+                                        </li>
+                                        <li>
+                                            <a href="">跟鞋</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">配件</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">包包</a>
+                                        </li>
+                                        <li>
+                                            <a href="">鞋子</a>
+                                        </li>
+                                        <li>
+                                            <a href="">帽子</a>
+                                        </li>
+                                        <li>
+                                            <a href="">內搭小可愛</a>
+                                        </li>
+                                        <li>
+                                            <a href="">飾品</a>
+                                        </li>
+                                        <li>
+                                            <a href="">髮飾</a>
+                                        </li>
+                                        <li>
+                                            <a href="">耳飾</a>
+                                        </li>
+                                        <li>
+                                            <a href="">眼鏡</a>
+                                        </li>
+                                        <li>
+                                            <a href="">內衣褲</a>
+                                        </li>
+                                        <li>
+                                            <a href="">生活雜貨</a>
+                                        </li>
+                                        <li>
+                                            <a href="">生活雜貨</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">指甲油</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- NEW IN -->
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEW IN</a>
+                            <ul class="dropdown-menu second-menu">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCESSORIES 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">May.21 / Gesture</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Apr.18 / Encounter</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">QUEEN SHOP 新品優惠</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">QUEEN SHOP 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">May.30</a>
+                                        </li>
+                                        <li>
+                                            <a href="">May.23</a>
+                                        </li>
+                                        <li>
+                                            <a href="">May.16</a>
+                                        </li>
+                                        <li>
+                                            <a href="">May.09</a>
+                                        </li>
+                                        <li>
+                                            <a href="">May.02</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">LADY 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">May.28</a>
+                                        </li>
+                                        <li>
+                                            <a href="">May.14</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Apr.16</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mar.26</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mar.05</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUTDOOR 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">May.11</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Apr.13</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mar.16</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">品牌聯名 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">May.25 / MR. MEN LITTLE MISS</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mar.30 / MR. MEN LITTLE MISS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME居家 新品</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">Apr.20</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- 質品提案 -->
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">質品提案</a>
+                            <ul class="dropdown-menu second-menu" role="menu">
+                                <li>
+                                    <a href="#" data-toggle="dropdown">Keds</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="dropdown">A O M</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="dropdown">皮康Pikang</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- 質品提案 -->
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="https://photo.queenshop.com.tw/qs/333/2018SP-00.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu second-menu" role="menu">
+                                <li>
+                                    <a href="#" data-toggle="dropdown">Keds</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="dropdown">A O M</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="dropdown">皮康Pikang</a>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>
+                    
+            </div>
+            <!-- end-menu -->
+            
+        </div>
+        <!-- end- nav-main -->
+
+        <!-- mob-search -->
+        <div class="container searchMob">
+            <div class="navbar-header">    
+                <div class="menu_mob_block dropdown">
+                    <input class="searchinput" type="text" placeholder=" SEARCH">
+                    <img src="assets/imgs/icon/penueling/searchW.svg" alt="">
+                    <a name="menu_search_mob">
+                        <!-- <img src="assets/imgs/icon/penueling/search.svg" alt=""> -->                      
+                    </a>
+                    <div id="phonesearch" class="dropdown-content"  name="menu_search_mob">
+                        <!-- <span onclick="$(this).parent().slideUp()" alt="">X</span> -->
+                        <ul>
+                            <li><a href="">碎花</a></li>
+                            <li><a href="">襯衫襯衫襯衫襯衫襯衫</a></li>
+                            <li><a href="">牛仔褲</a></li>
+                            <li><a href="">寬褲</a></li>
+                            <li><a href="">毛衣</a></li>
+                            <li><a href="">碎花</a></li>
+                            <li><a href="">寬褲寬褲寬褲</a></li>
+                            <li><a href="">寬褲寬褲寬褲</a></li>
+                            <li><a href="">襯衫襯衫襯衫襯衫襯衫</a></li>
+                        </ul>
+                    </div>
+                </div>               
+        </div>
+
+            
+        </div>
+        <!-- end- mob-search -->
+    
+         <!-- wave -->
+        <div class="wave_wrapper">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+        </div>
+        <!-- end-wave -->
+        
+    </nav>
+    <!-- end-nav -->
+   
+    <!--  -->
+    <script>
+     
+        // nav edit in ipad
+          
+        
+
+            $(".dropdown>.dropdown-menu").each(function(){
+
+                var x = $(window).scrollLeft() + $(window).width();
+                var y = $(this).offset().left + $(this).width();
+
+                if ( y > x && $(this).hasClass("second-menu"))
+                {
+                    $(this).css("right","0%").css("left","auto");
+                }
+                else if(y > x)
+                {
+                    $(this).css("right","100%").css("left","auto");
+                }
+            });
+
+
+
+
+    </script>
+    <!--  -->
+  
+    <!-- ban -->
+    <section class="section" style="position: relative;">
+        <a href="">
+            <figure class="in-view">
+                <img class="comp" src="https://photo.queenshop.com.tw/qs/333/23SU09KV.jpg" alt="">
+                <img class="mob" src="https://photo.queenshop.com.tw/qs/333/m23SU09KV.jpg" alt="">
+            </figure>
+        </a>
+            
+    </section>
+    <!-- ban -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            
+            <div class="f2">
+                <ul>
+                  <li><a href="https://www.queenshop.com.tw/zh-TW/News">最新消息</a></li>
+                  <li><a href="https://www.queenshop.com.tw/zh-TW/About?ID=b82f732b-660f-4c4b-86f7-8183d2b3e4cc&IDType=2">常見問題</a></li>
+                  <li><a href="https://www.queenshop.com.tw/zh-TW/Store">門市資訊</a></li>
+                  <li><a href="https://www.queenshop.com.tw/zh-TW/About?ID=bf88cbfd-6451-468c-aa35-ffe9529e2f8a&IDType=2">會員權益</a></li>
+                  <li><a href="https://www.queenshop.com.tw/zh-TW/About?ID=b6be01ba-d6f7-4ba8-aedd-2c18384773d3&IDType=2">售後服務</a></li>
+                </ul>
+            </div>
+             <div class="f3">
+                <p>MON-FRI, 9:00-18:00 <span>TEL:(02)2995-9996 / FAX:(02)2995-9978</span></p>
+                <p>service@queenshop.com.tw</p>
+                <p>2023 QUEENSHOP.ALL Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- end-footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/penueling.js"></script>
+
+  
+
+</body>
+
+</html>
